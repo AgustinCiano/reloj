@@ -1,0 +1,474 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(46, 46, 46);
+}
+
+
+.relojGrid{
+    display: grid;
+    grid-template-columns: repeat(20, 5vw);
+    grid-template-rows: repeat(9, 5vw);
+    
+}
+
+.reloj{
+    background-color: rgb(255, 251, 199);
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+
+}
+
+
+.reloj{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: 3/2/8/9;
+}
+
+
+
+.agujaSeg{
+    background-color: rgb(211, 56, 0);
+    width: 12vw;
+    height: 0.2vw;
+    border-radius: 10%;
+    
+        
+
+    
+    animation-name: giroAgujaSeg ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 60s;
+    animation-delay: 0s;
+
+    
+    
+}
+
+@keyframes giroAgujaSeg {
+    0%{
+        transform: rotate(-90deg);
+
+    }
+    100%{
+        transform: rotate(270deg);        
+    }
+
+
+    
+}
+
+
+
+
+
+
+.agujaMin{
+    background-color: rgb(53, 53, 53);
+    width: 11vw;
+    height: 0.5vw;
+    border-radius: 10%;
+    position: relative;
+    
+
+    animation-timing-function: step-start;
+    animation-name: giroAgujaMin ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3600s;
+    animation-delay: 0s;
+
+    
+    
+}
+
+@keyframes giroAgujaMin {
+    0%{
+        transform: rotate(-90deg);
+
+    }
+    100%{
+        transform: rotate(270deg);        
+    }
+
+
+    
+}
+
+
+
+.agujaHora{
+    background-color: rgb(53, 53, 53);
+    width: 8vw;
+    height: 0.8vw;
+    border-radius: 10%;
+    position: relative;
+    
+
+    animation-timing-function: step-start;
+    animation-name: giroAgujaHora ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 43200s;
+    animation-delay: 0s; 
+    
+}
+
+@keyframes giroAgujaHora {
+    0%{
+        transform: rotate(-90deg);
+
+    }
+    100%{
+        transform: rotate(270deg);        
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cronometro{
+    background-color: rgb(255, 251, 199);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+
+}
+
+
+.cronometro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: 3/12/8/16;
+}
+
+
+
+.agujaSegCronometro{
+    background-color: rgb(211, 56, 0);
+    width: 12vw;
+    height: 0.2vw;
+    border-radius: 10%;
+        
+
+    
+    animation-name: giroAgujaSegCronometro ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 60s;
+    animation-delay: 0s;
+
+    
+    
+}
+
+@keyframes giroAgujaSegCronometro {
+    0%{
+        transform: rotate(-90deg);
+
+    }
+    100%{
+        transform: rotate(270deg);        
+    }
+
+
+    
+}
+
+
+
+
+
+
+.agujaMinCronometro{
+    background-color: rgb(53, 53, 53);
+    width: 11vw;
+    height: 0.5vw;
+    border-radius: 10%;
+    position: relative;
+    
+
+    animation-timing-function: step-start;
+    animation-name: giroAgujaMinCronometro ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3600s;
+    animation-delay: 0s;
+
+    
+    
+}
+
+@keyframes giroAgujaMinCronometro {
+    0%{
+        transform: rotate(-90deg);
+
+    }
+    100%{
+        transform: rotate(270deg);        
+    }
+
+
+    
+}
+
+
+
+.agujaSegFastCronometro{
+    background-color: rgb(53, 53, 53);
+    width: 8vw;
+    height: 0.8vw;
+    border-radius: 10%;
+    position: relative;
+    
+
+    animation-timing-function: step-start;
+    animation-name: giroSegFastCronometro ;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps();
+    animation-duration: 10s;
+    animation-delay: 0s; 
+    
+}
+
+@keyframes giroSegFastCronometro {
+    0%{
+        transform: rotate(-90deg);
+    }   
+    1.66%{
+        transform: rotate(-84deg);
+    }
+    3.32%{
+        transform: rotate(-78deg);
+    }
+    4.98%{
+        transform: rotate(-72deg);
+    }
+    6.64%{
+        transform: rotate(-66deg);
+    }
+    8.3%{
+        transform: rotate(-60deg);
+    }
+    9.96%{
+        transform: rotate(-54deg);
+    }
+    11.62%{
+        transform: rotate(-48deg);
+    }
+    13.28%{
+        transform: rotate(-42deg);
+    }
+    14.94%{
+        transform: rotate(-36deg);
+    }
+    16.6%{
+        transform: rotate(-30deg);
+    }
+    18.26%{
+        transform: rotate(-24deg);
+    }
+    19.92%{
+        transform: rotate(-18deg);
+    }
+    21.58%{
+        transform: rotate(-12deg);
+    }
+    23.24%{
+        transform: rotate(-6deg);
+    }
+    24.9%{
+        transform: rotate(0deg);
+    }
+    26.56%{
+        transform: rotate(6deg);
+    }
+    28.22%{
+        transform: rotate(12deg);
+    }
+    29.88%{
+        transform: rotate(18deg);
+    }    
+    31.54%{
+        transform: rotate(24deg);
+    }
+    33.2%{
+        transform: rotate(30deg);
+    }
+    34.86%{
+        transform: rotate(36deg);
+    }
+    36.52%{
+        transform: rotate(42deg);
+    }
+    38.18%{
+        transform: rotate(48deg);
+    }
+    39.84%{
+        transform: rotate(54deg);
+    }
+    41.5%{
+        transform: rotate(60deg);
+    }
+    43.16%{
+        transform: rotate(66deg);
+    } 
+    44.82%{
+        transform: rotate(72deg);
+    }
+    44.82%{
+        transform: rotate(78deg);
+    }
+    46.48%{
+        transform: rotate(84deg);
+    }
+    48.14%{
+        transform: rotate(90deg);
+    }
+    49.8%{
+        transform: rotate(96deg);
+    }
+    51.46%{
+        transform: rotate(102deg);
+    }
+    53.12%{
+        transform: rotate(108deg);
+    }
+    54.78%{
+        transform: rotate(114deg);
+    }
+    56.44%{
+        transform: rotate(120deg);
+    }
+    58.1%{
+        transform: rotate(126deg);
+    }
+    59.76%{
+        transform: rotate(132deg);
+    }
+    61.42%{
+        transform: rotate(138deg);
+    }
+    63.08%{
+        transform: rotate(144deg);
+    }
+    64.74%{
+        transform: rotate(150deg);
+    }
+    66.4%{
+        transform: rotate(156deg);
+    }
+    68.06%{
+        transform: rotate(162deg);
+    }
+    69.72%{
+        transform: rotate(168deg);
+    }
+    71.38%{
+        transform: rotate(174deg);
+    }    
+    73.04%{
+        transform: rotate(180deg);
+    }
+    74.7%{
+        transform: rotate(186deg);
+    }
+    76.36%{
+        transform: rotate(192deg);
+    }
+    78.02%{
+        transform: rotate(198deg);
+    }
+    79.68%{
+        transform: rotate(204deg);
+    }
+    39.84%{
+        transform: rotate(210deg);
+    }
+    81.34%{
+        transform: rotate(216deg);
+    }
+
+
+
+
+
+
+
+
+
+    83%{
+        transform: rotate(222deg);
+    }
+    84.66%{
+        transform: rotate(228deg);
+    }
+    86.32%{
+        transform: rotate(234deg);
+    }
+    87.98%{
+        transform: rotate(240deg);
+    }
+    89.64%{
+        transform: rotate(246deg);
+    }
+    91.3%{
+        transform: rotate(252deg);
+    }
+    92.96%{
+        transform: rotate(258deg);
+    }
+    94.62%{
+        transform: rotate(264deg);
+    }
+    96.28%{
+        transform: rotate(270deg);
+    }
+    97.94%{
+        transform: rotate(276deg);
+    }
+    99.66%{
+        transform: rotate(282deg);
+    }
+    
+}
